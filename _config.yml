@@ -1,0 +1,23 @@
+# Site settings
+title: tufts.io
+author: Tufts CSX
+author_nickname: CSX
+email: git@github.com:TuftsCSX/tufts.io.git
+description: "Computer Science community at Tufts"
+baseurl: ""
+url: "http://tufts.io"
+
+permalink: '/blog/:title'
+post_dirs: false
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM # GitHub Flavored Markdown
+  hard_wrap: false
+highlighter: rouge
+
+gems:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap

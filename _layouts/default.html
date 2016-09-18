@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="{{ site.author }}" />
+    <meta name="author" content="{{ site.author_nickname }}" />
+    <meta name="contact" content="{{ site.email }}" />
+    <meta name="description" content="{{ site.description }}" />
+    <meta name="keywords" content="{{ site.keywords }}" />
+    <meta name="generator" content="Jekyll" />
+    <meta name="language" content="English" />
+    <meta name="og:type" content="website" />
+    {% seo %}
+    <style type="text/css">
+      body {
+        margin: 40px auto;
+        max-width: 650px;
+        line-height: 1.6;
+        font-size: 18px;
+        color: #444;
+        padding: 0 10px;
+      }
+      h1, h2, h2 {
+        line-height: 1.2;
+      }
+      aside {
+        margin-top: -20px;
+        margin-bottom: -10px;
+        margin-left: 20px;
+        font-style: italic;
+      }
+      img, code, pre {
+        max-width: 650px;
+      }
+      pre {
+        overflow-x: auto;
+        word-wrap: normal;
+        overflow-wrap: normal;
+        white-space: pre-wrap;
+        display: block;
+      }
+      footer hr {
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>{{ page.title }}</h2>
+    <div class="container">
+      {{ content }}
+    </div>
+    <footer>
+      <hr>
+      We stole some CSS from <a href="http://bettermotherfuckingwebsite.com">
+        Better Motherfucking Website</a>.
+    </footer>
+    <script type="text/javascript">
+// google analytics
+    </script>
+    <script type="text/javascript">
+// heap analytics
+    </script>
+  </body>
+</html>
