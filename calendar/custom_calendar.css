@@ -1,0 +1,61 @@
+.dp-cur, .chip dt, .te, .te-t, .te-rev-s, .rb-n, .rb-i, .agenda, .event-title {
+  white-space:normal !important;
+}
+
+body{
+  margin:0;
+  padding:0;
+  overflow-y:hidden;
+}
+
+html{
+  overflow-y:hidden;
+}
+
+div {
+  font-family: 'Lato', Helvetica, sans-serif;
+  color: #444;
+}
+
+.calendar-container {
+  font-size: medium;
+}
+
+#agenda-underflow-top1 {
+  padding-bottom: 20px;
+  padding-left: 20px;
+  border-bottom: 0px;
+}
+
+.view-container-border, .view-container-border .date-label {
+  background-color: #FFFFFF;
+  padding-left: 20px;
+}
+
+.agenda .day {
+  border-bottom: 0px;
+  margin-bottom: 30px;
+  margin-left: ;
+}
+
+.agenda .event {
+  border-top: 0;
+  margin-left: 20px;
+}
+
+.nav-table .date-top {
+  font-size: large;
+}
+
+#agenda-underflow-bottom1 {
+  height: 10% !important;
+}
+
+.view-cap, .view-container-border {
+  background-color: #FFF;
+}
+
+.loading {
+  background-color: transparent;
+  color: #BBBBBB;
+}
