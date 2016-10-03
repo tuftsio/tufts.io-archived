@@ -1,6 +1,13 @@
 <!DOCTYPE html>
+<style type="text/css">
+  html, body {
+    margin: 0px;
+    padding: 0px;
+  }
+</style>
 <html lang="en">
   <head>
+    <link href="css/main.css" rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,14 +22,16 @@
     {% seo %}
     <style type="text/css">
       body {
-        margin: 40px auto;
-        max-width: 800px;
         line-height: 1.6;
         font-size: 18px;
         font-family: 'Lato', Helvetica, sans-serif;
         color: #444;
-        padding: 0 10px;
 
+      }
+      .container {
+        margin: 40px auto;
+        max-width: 800px;
+        padding: 0 10px;
       }
       a {
         color: #2A4EA3;
@@ -30,12 +39,6 @@
       }
       h1, h2, h2 {
         line-height: 1.2;
-      }
-      .title-subtext {
-        margin-top: -20px;
-      }
-      .header-section {
-        margin-bottom: 50px;
       }
       aside {
         margin-top: -20px;
@@ -59,7 +62,26 @@
     </style>
   </head>
   <body>
-    <h2>{{ page.title }}</h2>
+    <div class="header-section">
+      <ul class="bg-bubbles"> <!-- credit: codepen.io/Lewitje/pen/BNNJjo -->
+        <div class="header-text">
+          <h2>{{ page.title }}</h2>
+          <p class="title-subtext">{{ page.subtitle }}</p>
+          <!-- TODO: remove, temporary -->
+          <p class="title-subtext">Looking for the Hackathon? <a href="http://poly.tufts.io" style="color:white;">poly.tufts.io</a></p>
+        </div>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
     <div class="container">
       {{ content }}
     </div>
